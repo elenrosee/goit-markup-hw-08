@@ -1,0 +1,19 @@
+.logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  color: $accent-color;
+  display: flex;
+}
+.studio-logo {
+  color: $text-color-black-logo;
+}
+
+.footer {
+  .logo {
+    margin-bottom: 20px;
+  }
+  .studio-logo {
+    color: $text-color-white;
+  }
+}

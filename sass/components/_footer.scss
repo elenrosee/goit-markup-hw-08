@@ -1,0 +1,87 @@
+.footer {
+  background-color: $background-color-gray;
+  padding: 60px 0;
+}
+.footer-nav {
+  display: flex;
+  align-items: baseline;
+}
+.footer-auth-nav-link {
+  line-height: 1.71;
+  color: $text-color-auth-nav;
+  font-style: normal;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &:first-child {
+    color: $text-color-white;
+  }
+}
+.footer-social-links {
+  margin-left: 70px;
+}
+.footer-social-links-title {
+  @extend %white-title;
+  margin-bottom: 20px;
+}
+.footer-social-links-list {
+  display: flex;
+  margin: 0 -5px 0;
+}
+
+@each $iconName in $footer-icons {
+  .footer-social-links-#{$iconName} {
+    background-image: url(../images/icons/#{$iconName}.svg);
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 5px 0;
+
+    @include transition(background-color);
+
+    &:hover {
+      cursor: pointer;
+      background-color: $accent-color;
+    }
+  }
+}
+
+.footer-form {
+  margin-left: 93px;
+}
+.footer-form-title {
+  @extend %white-title;
+  margin-bottom: 20px;
+}
+.footer-input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-input-button {
+  @extend %btn;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+}
+.footer-input-img {
+  margin-left: 10px;
+  fill: $text-color-white;
+}

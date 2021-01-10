@@ -1,0 +1,15 @@
+@import './base/normalize';
+@import './utils/variables';
+
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/common-styles';
+
+@import './components/logo';
+@import './components/page-header';
+@import './components/hero-section';
+@import './components/about-us-section';
+@import './components/team-section';
+@import './components/clients-section';
+@import './components/footer';
+@import './components/modal-window';

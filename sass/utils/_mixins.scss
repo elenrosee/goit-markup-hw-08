@@ -1,0 +1,9 @@
+@mixin transition($attribute) {
+  transition: $attribute 250ms $timing-function;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
