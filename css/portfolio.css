@@ -319,7 +319,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -342,9 +342,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: #2196f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .studio-logo {
@@ -369,14 +366,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 60px;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
+.header .logo {
+  display: block;
+  margin: 16px auto 16px 0;
 }
 
 .site-nav li:not(:last-child) {
@@ -384,9 +379,6 @@ body {
 }
 
 .site-nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -415,27 +407,11 @@ body {
   opacity: 1;
 }
 
-.auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
 .auth-nav li:not(:first-child) {
   margin-left: 50px;
 }
 
 .auth-nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
@@ -492,9 +468,6 @@ body {
 }
 
 .projects-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
@@ -580,9 +553,6 @@ body {
 }
 
 .footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -611,9 +581,6 @@ body {
 }
 
 .footer-social-links-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 -5px 0;
 }
 
@@ -737,9 +704,6 @@ body {
 }
 
 .footer-input-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -308,7 +308,7 @@ a {
 
 .features-title, .team-title, .clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -325,7 +325,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -348,9 +348,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: #2196f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .studio-logo {
@@ -375,14 +372,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 60px;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
+.header .logo {
+  display: block;
+  margin: 16px auto 16px 0;
 }
 
 .site-nav li:not(:last-child) {
@@ -390,9 +385,6 @@ body {
 }
 
 .site-nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -421,27 +413,11 @@ body {
   opacity: 1;
 }
 
-.auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
 .auth-nav li:not(:first-child) {
   margin-left: 50px;
 }
 
 .auth-nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
@@ -460,10 +436,10 @@ body {
 
 .hero {
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  height: 400px;
   max-width: 1600px;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero_background.jpg);
@@ -475,8 +451,8 @@ body {
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -484,19 +460,15 @@ body {
 }
 
 .about-us {
-  padding: 94px 0;
-}
-
-.about-us-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 -15px 94px -15px;
+  padding: 60px 0;
 }
 
 .about-us-item-antenna {
-  width: 270px;
-  margin: 0 15px 0;
+  width: 450px;
+}
+
+.about-us-item-antenna:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about-us-item-antenna::before {
@@ -511,8 +483,11 @@ body {
 }
 
 .about-us-item-clock {
-  width: 270px;
-  margin: 0 15px 0;
+  width: 450px;
+}
+
+.about-us-item-clock:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about-us-item-clock::before {
@@ -527,8 +502,11 @@ body {
 }
 
 .about-us-item-diagram {
-  width: 270px;
-  margin: 0 15px 0;
+  width: 450px;
+}
+
+.about-us-item-diagram:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about-us-item-diagram::before {
@@ -543,8 +521,11 @@ body {
 }
 
 .about-us-item-astronaut {
-  width: 270px;
-  margin: 0 15px 0;
+  width: 450px;
+}
+
+.about-us-item-astronaut:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about-us-item-astronaut::before {
@@ -559,6 +540,7 @@ body {
 }
 
 .about-us-title {
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -607,17 +589,11 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .team-title {
-  margin-bottom: 50px;
-}
-
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-bottom: 30px;
 }
 
 .team-item {
@@ -628,11 +604,11 @@ body {
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-worker-photo {
-  width: 270px;
+  width: 450px;
   margin-bottom: 30px;
 }
 
@@ -654,7 +630,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 32px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 32px 30px;
 }
 
 .team-social-links-list li:not(:last-child) {
@@ -698,12 +680,6 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .clients-list li:not(:last-child) {
   margin-right: 30px;
 }
@@ -743,9 +719,6 @@ body {
 }
 
 .footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -774,9 +747,6 @@ body {
 }
 
 .footer-social-links-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 -5px 0;
 }
 
@@ -900,9 +870,6 @@ body {
 }
 
 .footer-input-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -983,7 +950,6 @@ body {
 
 .modal-form-field {
   position: relative;
-  display: block;
   width: 448px;
 }
 
@@ -1087,7 +1053,6 @@ body {
 }
 
 .modal-checkbox-content {
-  display: inline-block;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1126,7 +1091,6 @@ body {
 }
 
 .modal-submit-button {
-  display: block;
   margin-right: auto;
   margin-left: auto;
 }

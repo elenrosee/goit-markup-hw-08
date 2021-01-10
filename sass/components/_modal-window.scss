@@ -55,7 +55,7 @@
 }
 .modal-form-field {
   position: relative;
-  display: block;
+  // display: block;
   width: 448px;
 
   &:not(:first-child) {
@@ -124,7 +124,7 @@
   }
 }
 .modal-checkbox-content {
-  display: inline-block;
+  // display: inline-block;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color-grey;
@@ -161,7 +161,7 @@
 }
 .modal-submit-button {
   @extend %btn;
-  display: block;
+  // display: block;
   margin-right: auto;
   margin-left: auto;
 }

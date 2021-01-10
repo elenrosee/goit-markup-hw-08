@@ -1,15 +1,19 @@
 .about-us {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .about-us-list {
-  display: flex;
-  margin: 0 -15px 94px -15px;
+  // display: flex;
+  // margin: 0 -15px 94px -15px;
 }
 
 @each $iconName in $about-us-icons {
   .about-us-item-#{$iconName} {
-    width: 270px;
-    margin: 0 15px 0;
+    width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    // margin: 0 15px 0;
 
     &::before {
       display: block;
@@ -25,6 +29,7 @@
 }
 
 .about-us-title {
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;

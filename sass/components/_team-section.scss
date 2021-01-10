@@ -1,13 +1,13 @@
 .team {
   background-color: $background-color-light-pink;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .team-title {
   @extend %section-title;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .team-list {
-  display: flex;
+  // display: flex;
 }
 .team-item {
   background-color: $text-color-white;
@@ -16,11 +16,11 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 .team-worker-photo {
-  width: 270px;
+  width: 450px;
   margin-bottom: 30px;
 }
 .team-worker-name {
@@ -36,8 +36,9 @@
   margin-bottom: 16px;
 }
 .team-social-links-list {
-  display: flex;
-  margin: 0 32px 30px;
+  @include flex-center();
+  // ИСПРАВИТЬ!!!
+  padding: 0 32px 30px;
 
   li:not(:last-child) {
     margin-right: 10px;

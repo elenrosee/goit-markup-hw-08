@@ -1,11 +1,14 @@
 .header {
   @include flex-center();
-  height: 80px;
+  height: 60px;
 }
-
+.header .logo {
+  display: block;
+  margin: 16px auto 16px 0;
+}
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  // display: flex;
+  // margin-left: 93px;
 
   li:not(:last-child) {
     margin-right: 50px;
@@ -13,7 +16,7 @@
 }
 
 .site-nav-link {
-  display: flex;
+  // display: flex;
   position: relative;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -43,8 +46,8 @@
   }
 }
 .auth-nav {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
 
   li:not(:first-child) {
     margin-left: 50px;
@@ -52,7 +55,7 @@
 }
 
 .auth-nav-link {
-  @include flex-center();
+  // @include flex-center();
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $text-color-grey;
