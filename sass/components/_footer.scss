@@ -2,11 +2,17 @@
   background-color: $background-color-gray;
   padding: 60px 0;
 }
-.footer-nav {
+.footer .logo {
+  @include flex-center();
+  margin-bottom: 20px;
+}
+.footer-auth-nav {
+  margin-bottom: 60px;
   // display: flex;
-  align-items: baseline;
+  // align-items: baseline;
 }
 .footer-auth-nav-link {
+  @include flex-center();
   line-height: 1.71;
   color: $text-color-auth-nav;
   font-style: normal;
@@ -20,14 +26,15 @@
   }
 }
 .footer-social-links {
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 .footer-social-links-title {
   @extend %white-title;
+  text-align: center;
   margin-bottom: 20px;
 }
 .footer-social-links-list {
-  // display: flex;
+  @include flex-center();
   margin: 0 -5px 0;
 }
 
@@ -53,21 +60,23 @@
 }
 
 .footer-form {
-  margin-left: 93px;
+  @include flex-center();
+  flex-wrap: wrap;
+  align-content: center;
 }
 .footer-form-title {
   @extend %white-title;
   margin-bottom: 20px;
 }
 .footer-input {
-  margin-right: 12px;
-  padding: 15px 16px;
-  width: 358px;
+  min-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: inherit;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
 
   &::placeholder {
     font-size: 16px;
@@ -77,8 +86,7 @@
 }
 .footer-input-button {
   @extend %btn;
-  // display: inline-flex;
-  align-items: center;
+  @include flex-center();
   padding: 10px 28px;
 }
 .footer-input-img {

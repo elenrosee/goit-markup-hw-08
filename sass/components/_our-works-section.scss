@@ -40,11 +40,6 @@
 
   @include transition(box-shadow);
 
-  .projects-item:hover .prject-pop-up-text,
-  .projects-item:focus .prject-pop-up-text {
-    transform: translateY(0);
-  }
-
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -71,8 +66,8 @@
 
   @include transition(transform);
 
-  .projects-item:hover,
-  .projects-item:focus {
+  .projects-item:hover &,
+  .projects-item:focus & {
     transform: translateY(0);
   }
 }
