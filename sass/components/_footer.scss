@@ -1,13 +1,23 @@
 .footer {
+  text-align: center;
   background-color: $background-color-gray;
   padding: 60px 0;
 }
 .footer .logo {
-  @include flex-center();
+  display: inline-block;
   margin-bottom: 20px;
 }
-.footer-auth-nav {
+.footer-nav {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+.footer-auth-nav-list {
   margin-bottom: 60px;
+
   // display: flex;
   // align-items: baseline;
 }
@@ -62,7 +72,7 @@
 .footer-form {
   @include flex-center();
   flex-wrap: wrap;
-  align-content: center;
+  flex-direction: column;
 }
 .footer-form-title {
   @extend %white-title;

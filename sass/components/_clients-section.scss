@@ -10,19 +10,25 @@
   flex-wrap: wrap;
   margin: -15px;
 
-  // li {
-  //   margin: 15px;
-  // }
+  li {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    li {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+  }
 }
 .clients-link {
   @include flex-center();
-  width: 210px;
   height: 90px;
   border: 1px solid $icon-color;
   color: $icon-color;
   border-radius: 4px;
   background-position: center;
-  margin: 15px;
 
   @include transition(all);
 

@@ -7,7 +7,11 @@
   margin-bottom: 30px;
 }
 .team-list {
-  // display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .team-item {
   background-color: $text-color-white;
@@ -15,13 +19,24 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: $before-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 .team-worker-photo {
   width: 450px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
 }
 .team-worker-name {
   font-weight: 500;
@@ -37,8 +52,7 @@
 }
 .team-social-links-list {
   @include flex-center();
-  // ИСПРАВИТЬ!!!
-  padding: 0 32px 30px;
+  padding-bottom: 24px;
 
   li:not(:last-child) {
     margin-right: 10px;

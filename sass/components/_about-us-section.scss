@@ -1,15 +1,23 @@
 .about-us {
   padding: 60px 0;
 }
+
 .about-us-list {
-  // display: flex;
-  // margin: 0 -15px 94px -15px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 @each $iconName in $about-us-icons {
   .about-us-item-#{$iconName} {
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
     }
     // margin: 0 15px 0;
 
@@ -33,36 +41,12 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
 .about-us-text {
   line-height: 1.71;
   color: $text-color-grey;
-}
-.features-title {
-  @extend %section-title;
-  margin-bottom: 50px;
-}
-.features-list {
-  display: flex;
-}
-.features-item {
-  display: flex;
-  position: relative;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-.features-img {
-  width: 370px;
-  height: 294px;
-}
-.features-img-caption {
-  @extend %white-title;
-  padding: 27px 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
 }
