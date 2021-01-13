@@ -920,6 +920,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .footer-input {
     width: 358px;

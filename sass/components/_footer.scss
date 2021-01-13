@@ -99,6 +99,9 @@
   padding: 15px 16px;
   margin-bottom: 20px;
 
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
   @media screen and (min-width: $desktop) {
     width: 358px;
   }
