@@ -1,4 +1,6 @@
 .features {
+  padding-bottom: 94px;
+
   @media screen and (max-width: $desktop) {
     display: none;
   }
@@ -14,14 +16,13 @@
 .features-item {
   display: flex;
   position: relative;
+  width: calc((100% - 30px * 2) / 3);
+  height: 294px;
+  overflow: hidden;
 
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-.features-img {
-  width: 370px;
-  height: 294px;
 }
 .features-img-caption {
   @extend %white-title;

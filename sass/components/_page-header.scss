@@ -13,16 +13,10 @@
   }
 }
 .header .logo {
-  display: inline-block;
   margin: 16px auto 16px 0;
 
   @media screen and (min-width: $tablet) {
     margin: 26px 0;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 26px;
-    margin: 0;
   }
 }
 .site-nav {

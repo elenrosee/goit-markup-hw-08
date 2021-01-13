@@ -22,6 +22,9 @@
   font-weight: 700;
   font-size: 28px;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
 }
 %is-hidden {
   visibility: 0;

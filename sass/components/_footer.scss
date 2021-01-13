@@ -1,10 +1,11 @@
 .footer {
-  text-align: center;
   background-color: $background-color-gray;
   padding: 60px 0;
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
 }
 .footer .logo {
-  display: inline-block;
   margin-bottom: 20px;
 }
 .footer-nav {
@@ -14,18 +15,23 @@
     align-items: baseline;
     justify-content: space-around;
   }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 .footer-auth-nav-list {
-  margin-bottom: 60px;
-
-  // display: flex;
-  // align-items: baseline;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 60px;
+  }
 }
 .footer-auth-nav-link {
-  @include flex-center();
   line-height: 1.71;
   color: $text-color-auth-nav;
   font-style: normal;
+
+  @media screen and (max-width: $desktop) {
+    @include flex-center();
+  }
 
   &:not(:last-child) {
     margin-bottom: 9px;
@@ -35,13 +41,13 @@
     color: $text-color-white;
   }
 }
-.footer-social-links {
-  margin-bottom: 60px;
-}
 .footer-social-links-title {
   @extend %white-title;
-  text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
 }
 .footer-social-links-list {
   @include flex-center();
@@ -70,16 +76,20 @@
 }
 
 .footer-form {
-  @include flex-center();
-  flex-wrap: wrap;
-  flex-direction: column;
+  @media screen and (max-width: $desktop) {
+    @include flex-center();
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 60px;
+  }
 }
+
 .footer-form-title {
   @extend %white-title;
   margin-bottom: 20px;
 }
 .footer-input {
-  min-width: 450px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: inherit;
@@ -87,6 +97,10 @@
   border-radius: 4px;
   padding: 15px 16px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -96,8 +110,11 @@
 }
 .footer-input-button {
   @extend %btn;
-  @include flex-center();
+  display: inline-flex;
+  justify-content: baseline;
+  align-items: center;
   padding: 10px 28px;
+  margin-left: 12px;
 }
 .footer-input-img {
   margin-left: 10px;

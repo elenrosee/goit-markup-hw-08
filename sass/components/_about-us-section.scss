@@ -15,9 +15,12 @@
 
 @each $iconName in $about-us-icons {
   .about-us-item-#{$iconName} {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: $before-tablet) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
+
     @media screen and (min-width: $tablet) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
