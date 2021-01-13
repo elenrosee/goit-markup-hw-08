@@ -393,7 +393,7 @@ body {
 }
 
 .header .logo {
-  display: block;
+  display: inline-block;
   margin: 16px auto 16px 0;
 }
 
@@ -1090,12 +1090,19 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-button {
@@ -1134,14 +1141,26 @@ body {
   margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal-form-title {
+    font-size: 18px;
+  }
 }
 
 .modal-form-field {
   position: relative;
-  width: 448px;
+  display: block;
+  width: 370px;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal-form-field {
+    width: 448px;
+  }
 }
 
 .modal-form-field:not(:first-child) {
@@ -1244,10 +1263,17 @@ body {
 }
 
 .modal-checkbox-content {
+  display: inline-block;
+  font-size: 12px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal-checkbox-content {
+    font-size: 14px;
+  }
 }
 
 .modal-checkbox-content::before {
@@ -1282,6 +1308,7 @@ body {
 }
 
 .modal-submit-button {
+  display: block;
   margin-right: auto;
   margin-left: auto;
 }
