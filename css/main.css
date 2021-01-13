@@ -1236,7 +1236,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 28px;
-  margin-left: 12px;
+}
+
+@media screen and (min-width: 1600px) {
+  .footer-input-button {
+    margin-left: 12px;
+  }
 }
 
 .footer-input-img {
