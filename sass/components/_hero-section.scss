@@ -15,6 +15,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
+    height: 600px;
+  }
 }
 .hero-title {
   font-weight: 900;
@@ -24,6 +29,11 @@
   text-transform: uppercase;
   color: $text-color-white;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-button {
   @extend %btn;

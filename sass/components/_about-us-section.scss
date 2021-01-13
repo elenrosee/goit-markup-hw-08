@@ -1,5 +1,8 @@
 .about-us {
   padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .about-us-list {
@@ -19,7 +22,9 @@
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }
-    // margin: 0 15px 0;
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 4 * 30px) / 4);
+    }
 
     &::before {
       display: block;
@@ -30,7 +35,6 @@
       background-repeat: no-repeat;
       background-position: center;
       margin-bottom: 30px;
-      width: 100%;
     }
   }
 }
