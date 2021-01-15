@@ -1,8 +1,13 @@
 .header {
+  position: relative;
+}
+
+.header-nav {
   height: 60px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 80px;
   }
@@ -13,21 +18,55 @@
   }
 }
 .header .logo {
-  margin: 16px auto 16px 0;
-
   @media screen and (min-width: $tablet) {
     margin: 26px 0;
   }
 }
+.menu-button {
+  display: inline-block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.menu-button .menu-icon-close {
+  display: none;
+}
+.menu-button.is-open .menu-icon-close {
+  display: block;
+}
+.menu-button.is-open .menu-icon-open {
+  display: none;
+}
+.menu-container {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $text-color-white;
+  // padding: 20%;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
+}
+
 .site-nav {
   li:not(:last-child) {
     margin-right: 50px;
   }
 
   // ИСПРАВИТЬ
-  @media screen and (max-width: $tablet) {
-    display: none;
-  }
+  // @media screen and (max-width: $tablet) {
+  //   display: none;
+  // }
 
   @media screen and (min-width: $tablet) {
     margin: 32px 0;
@@ -40,7 +79,6 @@
 }
 
 .site-nav-link {
-  position: relative;
   font-weight: 500;
   letter-spacing: 0.02em;
 
@@ -57,13 +95,14 @@
 }
 
 .current-link {
+  position: relative;
   color: $accent-color;
 
   &::after {
     display: inline-block;
     content: '';
     position: absolute;
-    top: 44px;
+    top: 29px;
     left: 0;
     height: 4px;
     width: 100%;
@@ -74,9 +113,9 @@
 }
 .auth-nav {
   // ИСПРАВИТЬ
-  @media screen and (max-width: $before-tablet) {
-    display: none;
-  }
+  // @media screen and (max-width: $before-tablet) {
+  //   display: none;
+  // }
 
   @media screen and (min-width: $tablet) {
     margin: 21px 0;
