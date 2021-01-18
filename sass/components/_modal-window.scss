@@ -1,27 +1,34 @@
 .modal-backdrop {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   padding: 15px;
+  overflow-y: scroll;
+
   z-index: 3;
 
   @include transition(all);
 }
 
 .modal {
+  position: relative;
   padding: 40px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 93px auto;
   width: 450px;
   border-radius: 4px;
   background-color: $text-color-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
