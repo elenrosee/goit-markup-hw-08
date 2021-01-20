@@ -698,8 +698,9 @@ body {
 }
 
 .projects-list li {
-  display: block;
+  display: inline-block;
   width: calc(100% - 30px);
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -716,9 +717,8 @@ body {
 }
 
 .projects-item {
-  display: inline-block;
+  display: block;
   width: 100%;
-  margin: 15px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -737,15 +737,18 @@ body {
 }
 
 .prject-img {
+  display: block;
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .prject-img-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   overflow: hidden;
+  height: 294px;
+  width: 100%;
 }
 
 .prject-pop-up-text {
@@ -777,6 +780,12 @@ body {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .project-content {
+    padding: 20px 0 20px 24px;
+  }
 }
 
 .project-name {

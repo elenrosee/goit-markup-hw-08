@@ -58,8 +58,9 @@
   }
 }
 .projects-list li {
-  display: block;
+  display: inline-block;
   width: calc(100% - 30px);
+  margin: 15px;
 
   @media screen and (min-width: $tablet) {
     margin: 15px;
@@ -70,9 +71,8 @@
   }
 }
 .projects-item {
-  display: inline-block;
+  display: block;
   width: 100%;
-  margin: 15px;
 
   @media screen and (min-width: $tablet) {
     margin: 0px;
@@ -86,12 +86,17 @@
   }
 }
 .prject-img {
+  display: block;
+  height: 100%;
   width: 100%;
+
+  object-fit: cover;
 }
 .prject-img-text {
-  display: flex;
   position: relative;
   overflow: hidden;
+  height: 294px;
+  width: 100%;
 }
 .prject-pop-up-text {
   position: absolute;
@@ -118,6 +123,9 @@
   border-right: 1px solid $border-color-projects;
   border-left: 1px solid $border-color-projects;
   padding: 20px 24px;
+  @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
+    padding: 20px 0 20px 24px;
+  }
 }
 .project-name {
   font-weight: 700;
