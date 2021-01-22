@@ -7,6 +7,11 @@ body {
   color: $text-color-black;
   background-color: $text-color-white;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .is-hidden {
   visibility: 0;
   opacity: 0;

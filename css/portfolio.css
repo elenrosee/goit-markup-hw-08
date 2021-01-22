@@ -342,6 +342,12 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .is-hidden {
   visibility: 0;
   opacity: 0;
@@ -737,7 +743,6 @@ body {
 }
 
 .prject-img {
-  display: block;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
