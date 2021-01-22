@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/img_header_mobile.jpg);
+    url(./../images/img_header_mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/img_header_mobile@2x.jpg);
+      url(./../images/img_header_mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 701px) {
@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/img_header_tablet.jpg);
+      url(./../images/img_header_tablet.jpg);
   }
   @media (min-resolution: 2dppx) {
     .hero {
@@ -43,7 +43,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/img_header_tablet@2x.jpg);
+        url(./../images/img_header_tablet@2x.jpg);
     }
   }
 }
@@ -56,7 +56,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/Img_header_desktop.jpg);
+      url(./../images/Img_header_desktop.jpg);
   }
   @media (min-resolution: 2dppx) {
     .hero {
@@ -65,7 +65,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/Img_header_desktop@2x.jpg);
+        url(./../images/Img_header_desktop@2x.jpg);
     }
   }
 }
