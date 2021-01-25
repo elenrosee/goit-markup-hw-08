@@ -645,7 +645,7 @@ img {
   background-size: cover;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/img_header_mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/img_header_mobile@2x.jpg);
@@ -659,7 +659,7 @@ img {
   }
 }
 
-@media screen and (min-width: 701px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 701px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 701px) and (min-device-pixel-ratio: 2), screen and (min-width: 701px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 701px) and (min-resolution: 192dpi), screen and (min-width: 701px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/img_header_tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/img_header_tablet@2x.jpg);
@@ -675,7 +675,7 @@ img {
   }
 }
 
-@media screen and (min-width: 951px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 951px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 951px) and (min-device-pixel-ratio: 2), screen and (min-width: 951px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 951px) and (min-resolution: 192dpi), screen and (min-width: 951px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/Img_header_desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/Img_header_desktop@2x.jpg);
@@ -1394,7 +1394,6 @@ img {
   position: relative;
   padding: 40px;
   margin: 93px auto;
-  max-width: 450px;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1464,16 +1463,9 @@ img {
   line-height: 1.15;
 }
 
-@media screen and (min-width: 1600px) {
-  .modal-form-title {
-    font-size: 18px;
-  }
-}
-
 .modal-form-field {
   position: relative;
   display: block;
-  max-width: 370px;
 }
 
 @media screen and (min-width: 480px) {
